@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+
+     <text style="margin-top:10px">账户余额(元)：{{avaAmt}}</text>
+     <text>积分余额：{{point}}</text>
+  </view>
+
+<view class="width_80" style="margin-top:20px">
+    <view>
+    <button type="primary" size="primarySize" bindtap="bindDeposit">充值</button>
+    <button bindtap="bindConsume">消费</button>
+     <button bindtap="bindDeductPage" wx:if="{{role == 'admin'}}">扣款</button>
+    </view>
+</view>
+
+</view>
+

@@ -1,0 +1,23 @@
+<view class="container">
+    <view>
+        <block>
+            <text style="font-size:20px">请选择充值金额：</text>
+        </block>
+    </view>
+    <view wx:for-items="{{amtTypes}}" wx:for-index="index" wx:key="{{item.name}}">
+        <label>
+            <view  style="margin-top:20px">
+            <checkbox-group bindchange="checkboxChange" data-index="{{index}}">
+                 <checkbox  data-index="{{index}}" value="{{item.name}}" />
+                 <rich-text  bindtap="tap" >¥ {{item.amt}} <label>送 {{item.presentAmt}} 元</label></rich-text>
+            </checkbox-group>
+            </view>
+       </label>
+   </view>
+
+      <view class="width_80" style="margin-top:150px">
+          <view>
+          <button type="primary" size="primarySize" bindtap="bindDeposit">确定充值</button>
+          </view>
+      </view>
+</view>

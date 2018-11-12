@@ -1,0 +1,17 @@
+<view class="container">
+
+    <view>
+        <label>输入消费金额（元）：</label>
+        <input  bindinput="bindKeyInput" type="digit" class="inputView"/>
+    </view>
+    <view class="divLine"/>
+    <view style="margin-top:20px">
+        <label>输入抵扣积分：</label>
+        <input  bindinput="bindKeyInputPoint" type="digit" class="inputView"/>
+    </view>
+    <view class="width_80" style="margin-top:20px">
+        <view>
+         <button bindtap="bindDeduct">扫码扣款</button>
+        </view>
+    </view>
+</view>

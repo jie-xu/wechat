@@ -1,0 +1,17 @@
+.width_80{
+   width:80%;
+}
+.inputView{
+    border:  2px solid red;
+    border-radius: 40px;
+    margin-right: 15px;
+    margin-top: 15px;
+    height:35px;
+}
+.divLine{
+    width:70%;
+    height:0px;
+    border:1px solid #E0E3DA;
+    margin-top:20px;
+
+}

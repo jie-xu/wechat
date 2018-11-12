@@ -1,0 +1,15 @@
+<view class="container">
+  <view>
+        <block>
+            <text style="font-size:20px">账户消费</text>
+        </block>
+    </view>
+    <view>
+         <image src="{{qrcodeImage}}"></image>
+    </view>
+
+    <view class="newline">
+     <text >账户余额(元)：{{avaAmt}}</text>
+     <text>积分余额：{{point}}</text>
+    </view>
+</view>
